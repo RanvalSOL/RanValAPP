@@ -1,0 +1,152 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  margin: 0;
+  color: #fff; /* White text color */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.navbar img {
+  max-width: 70px;
+  margin-right: 20px; /* Add some margin to the right of the logo */
+}
+
+/* Component styles */
+.component {
+  background: #333; /* Darker background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 10px; /* Smaller padding */
+  max-width: 400px; /* Smaller maximum width */
+}
+
+/* Header styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  max-width: 70px;
+}
+
+.header-text {
+  font-size: 36px;
+}
+
+/* Form styles */
+.form-container {
+  background: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-label {
+  display: block;
+  margin: 10px auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 8px;
+  background: #444; /* Slightly lighter background color */
+  color: #fff; /* White text color */
+  margin: 10px auto;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007AFF;
+}
+
+.form-button {
+  background: #007AFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background: #0056b3;
+}
+
+/* Output styles */
+.output-container {
+  background: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.output-text {
+  text-align: center;
+  font-size: 16px;
+  color: #fff; /* White text color */
+}
+
+/* Thumbnail styles */
+.thumbnail {
+  text-align: center;
+  background: #444;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    margin-top: 10px;
+  }
+  
+  /* Ensure components remain centered */
+  .component {
+    max-width: 100%; /* Full width on small screens */
+    margin: 10px; /* Reduce margin for smaller spacing */
+  }
+}
