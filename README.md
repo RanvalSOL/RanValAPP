@@ -1,6 +1,6 @@
-# Vanral
+# Ranval
 
-Vanral provides a platform for users to evaluate project idea proposals, discover unique projects, and license their ideas.
+Ranval provides a platform for users to evaluate project idea proposals, discover unique projects, and license their ideas.
 About the Project
 
 Vanral aims to create a platform where users can present their project ideas and share them with other users who wish to license these ideas. It also assists users who want to determine the uniqueness of their ideas and whether they exist among existing projects.
