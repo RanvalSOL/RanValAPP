@@ -5,6 +5,31 @@
   box-sizing: border-box;
 }
 
+.custom-div-rose {
+  background-color: #9c52f7; /* bg-rose-300 */
+  position: absolute; /* absolute */
+  top: 30rem; /* top-[-1rem] */
+  z-index: -1;
+  right: 5rem; /* Mobil uyumlu left: 5rem yerine right: 5rem kullanın */
+  height: 31.25rem; /* h-[31.25rem] */
+  width: 50rem; /* w-[50rem] */
+  border-radius: 50%; /* rounded-full */
+  filter: blur(10rem); /* blur-[10rem] */
+  overflow: hidden;
+}
+
+.custom-div {
+  background-color: #00eeff; /* bg-purple-400 */
+  position: absolute; /* absolute */
+  top: 5rem; /* top-10rem olarak güncelleyin */
+  z-index: -10; /* -z-10 */
+  right: 70rem; /* right: 20rem olarak güncelleyin */
+  height: 46.25rem; /* h-[31.25rem] */
+  width: 46.25rem; /* w-[31.25rem] */
+  border-radius: 50%; /* rounded-full */
+  filter: blur(10rem); /* blur-[10rem] */
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -16,21 +41,21 @@ body {
   margin: 0;
   color: #fff; /* White text color */
 
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  min-height: 100vh; /* Ensure full viewport height */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Component styles */
 .component {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Dikeyde merkezleme */
-  align-items: center; /* Yatayda merkezleme */
+  justify-content: center;
+  align-items: center;
   background: #333; /* Darker background color */
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 50px auto; /* Dikeyde merkezleme için margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
   padding: 15px;
   max-width: 600px;
 }
@@ -39,12 +64,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #3a3a3a;
+  background: #333;
   color: #fff;
 
   padding: 20px;
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container {
@@ -94,25 +119,24 @@ body {
   transition: border-color 0.3s;
 }
 
-.form-input:focus {
-  border-color: #303030;
-}
-
 .form-button {
   background: #17c0f4;
   color: #fff;
   border: none;
 
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 12px 24px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 1s;
 }
 
 .wallet {
   font-size: 18px;
 }
-
+.form-button:focus {
+  background: linear-gradient(to right, #9c52f7, #14f1db);
+  transition: background-color 1s;
+}
 .form-button:hover {
   background: linear-gradient(to right, #9c52f7, #14f1db);
 }
@@ -193,8 +217,8 @@ body {
 
   /* Ensure components remain centered */
   .component {
-    max-width: 100%; /* Full width on small screens */
-    margin: 10px;
+    max-width: 90%; /* Full width on small screens */
+
     margin-top: 40px; /* Reduce margin for smaller spacing */
   }
 }
