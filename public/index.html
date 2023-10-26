@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RanVal Web3</title>
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" type="image/svg+xml" href="solana-sol-logo.svg">
-
-</head>
-<body>
-
-  <nav class="navbar component">
-    <img src="./Untitled.png" alt="logo">
-    <h1 class="header-text"> RanVal </h1>
-  </nav>
-
-  <div class="container component">
-
-    <div class="form-container component">
-      <h2 class="form-header">Generate Web 3 Idea</h2>
-      <form class="meta-form">
-        <label for="title" class="form-label">
-          <span>Idea Title:</span>
-          <input type="text" name="title" class="form-input">
-          <button class="form-button">Generate Idea</button>
-        </label>
-      </form>
-    </div>
-  
-    <div class="output-container component">
-      <div class="description">
-        <p class="output-text">idea</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RanVal Web3</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="solana-sol-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="./Untitled.png" alt="logo" />
+        <h1 class="header-text">RanVal</h1>
       </div>
-      <div class="tags">
-        <p class="output-text">keywords</p>
+      <button class="form-button"><p class="wallet">Connect Wallet</p></button>
+    </nav>
+
+    <div class="container component">
+      <div class="form-container">
+        <h2 class="form-header">Generate WEB3 Project</h2>
+        <form class="meta-form">
+          <label for="title" class="form-label">
+            <span>Describe the Project Content :</span>
+            <input type="text" name="title" class="form-input" />
+            <button class="form-button">Generate Idea</button>
+          </label>
+        </form>
+      </div>
+
+      <div class="output-container">
+        <div class="description">
+          <p class="output-text">💙💜</p>
+        </div>
+        <div class="tags">
+          <p class="output-text"></p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <h2 class="form-header">Generate NFT</h2>
+        <form class="image-form">
+          <label for="image" class="form-label">
+            <span>Describe the NFT :</span>
+            <input type="text" name="prompt" class="form-input" />
+            <button class="form-button">Generate NFT</button>
+          </label>
+        </form>
+      </div>
+
+      <div class="thumbnail">
+        <img src="./mesh-gradient (1).png" alt="thumbnail" />
       </div>
     </div>
-  
-    <div class="form-container component">
-      <h2 class="form-header">Generate nft</h2>
-      <form class="image-form">
-        <label for="image" class="form-label">
-          <span>Describe the image</span>
-          <input type="text" name="prompt" class="form-input">
-          <button class="form-button">Generate nft</button>
-        </label>
-      </form>
-    </div>
+    <!-- end container -->
 
-    <div class="thumbnail component">
-      <img src="https://place-hold.it/512x512" alt="thumbnail">
-    </div>
-    
-  </div><!-- end container -->
+    <footer class="footer">
+      <p class="footerp">&copy;2023 RanVal x SolGrant</p>
+      <a href="https://github.com/RanvalSOL"
+        ><span class="opensource">Open Source 🦑</span></a
+      >
+    </footer>
 
-  <script src="/index.js"></script>
-</body>
+    <script src="/index.js"></script>
+  </body>
 </html>
