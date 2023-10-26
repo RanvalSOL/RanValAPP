@@ -11,7 +11,10 @@ Features
     It offers a database to check for similar ideas among existing projects.
     Supports the conversion of ideas to NFTs and stamping with PoH for licensed ideas.
 
+![Asset 2@4x](https://github.com/RanvalSOL/RanValAPP/assets/104009709/dc989f42-aae8-4720-be1b-179475327e74)
+
 Getting Started
+
 
 To run the project in a local environment, you can follow these steps:
 
